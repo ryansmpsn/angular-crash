@@ -14,9 +14,13 @@ import { TaskItemComponent } from './components/task-item/task-item.component';
 import { AddTaskComponent } from './components/add-task/add-task.component';
 import { AboutComponent } from './components/about/about.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { WarningAlertComponent } from './components/warning-alert/warning-alert.component';
+import { SuccessAlertComponent } from './components/success-alert/success-alert.component';
+import { HomeComponent } from './components/home/home.component';
 
 const appRoutes: Routes = [
-  { path: '', component: TasksComponent },
+  { path: '', component: HomeComponent },
+  { path: 'task', component: TasksComponent },
   { path: 'about', component: AboutComponent },
 ];
 @NgModule({
@@ -29,6 +33,9 @@ const appRoutes: Routes = [
     AddTaskComponent,
     AboutComponent,
     FooterComponent,
+    WarningAlertComponent,
+    SuccessAlertComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
